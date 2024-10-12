@@ -1,0 +1,243 @@
+*{
+    /* Caracteristici globale */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+header{
+    /* background-color: #d37070f5; */
+    color: white;
+    padding: 5% 0;
+    width: 100%;
+    position: absolute;
+    /* top: 10;
+    width: 100%; */
+}
+header h1{
+    margin-bottom: 12px;
+    text-align: center;
+}
+.valuri{
+    position:absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.valuri svg{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a{
+    color: white;
+    text-decoration:none;
+    font-size: 15px;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+main{
+    padding: 20px;
+    padding-top: 20%;
+}
+#introducere{
+    margin-top:10px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 20px;  
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.image{
+    flex: 1;
+}
+.image img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+.text{
+    flex: 1;
+    padding: 20px;
+}
+.text h2{
+    font-size: 26px;
+    color: #eb3c70cb;
+    margin-bottom: 10px;
+}
+.text p{
+    font-size: 1.1rem;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    color: hsl(0, 0%, 23%);
+    line-height: 1.5;
+}
+/* @media (max-width:480px)
+{
+    .text p{
+        font-size: 0.9rem;
+        line-height: 1.1;
+    }
+} */
+.Sortimente{
+    display: flex;
+    justify-content: space-between; /* Distribuie spațiu egal între elemente */
+    flex-wrap: wrap; /* Permite să se împacheteze pe mai multe rânduri dacă este nevoie */
+    gap: 20px;
+  
+}
+.prajituri{
+    flex: 1; /* Asigură că fiecare tort ocupă un spațiu egal */
+    box-sizing: border-box;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+}
+.videoclip iframe{
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+}
+.prajituri img{
+    width: 100%;
+    max-width: 300px; /* Setează o lățime maximă fixă */
+    height: auto; /* Permite imaginii să păstreze proporțiile */
+    object-fit: cover; /* Menține proporțiile imaginii și decupează excesul */
+    border-radius: 10px; /* Păstrează marginile rotunjite */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adaugă umbră */
+}
+.prajituri h2{
+    margin: 20px 0; /* Ajustează marginile pentru titlu */
+    font-size: 22px;
+    color: #eb3c70cb;
+}
+.prajituri p{
+    color:#3a3a3a;
+    font-size: 16px;
+    line-height: 1.5; /* Aliniere text uniformă */
+    height: auto; /* Elimină înălțimea fixă pentru a permite textului să se adapteze */
+    overflow: hidden; /* Ascunde textul care depășește această înălțime */
+}
+#alergeni{
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+#alergeni h2{
+    text-align: center;
+    margin:20px 0;
+    color:#eb3c70cb;
+    font-size: 30px;
+}
+#alergeni table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+#alergeni table,th,td{
+    border: 1px solid #afadad;
+}
+#alergeni th,td{
+    padding: 15px;
+    text-align: center;
+}
+#alergeni th{
+    background-color: #ffaad9;
+    color: black;
+    font-weight: 800;
+}
+#alergeni td{
+    background-color: #ffff;
+}
+#recenzii {
+    background-color: #f4f4f4;
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+#recenzii h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #eb3c70cb;
+    margin-bottom: 30px;
+}
+.recenzie {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.recenzie p {
+    font-size: 18px;
+    color: #3a3a3a;
+    margin-bottom: 10px;
+}
+.recenzie h4 {
+    font-size: 16px;
+    color: #eb3c70cb;
+}
+#galerie {
+    padding: 40px;
+    margin-top: 40px;
+}
+#galerie h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #eb3c70cb;
+    margin-bottom: 30px;
+}
+.galerie-imagini {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.galerie-imagini img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+footer{
+    background-color: #333;
+    color: wheat;
+    text-align: center;
+    padding: 19px 0;
+    margin-top: 20px;
+    /*position: fixed;
+    z-index: 111;
+    width: 100%;
+    bottom: 0; */
+}
+.tabel{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
